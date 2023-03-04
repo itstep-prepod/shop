@@ -51,15 +51,10 @@ const data = {
     ]
 };
 
-export const fetchProducts = (shouldReject = false) => {
-    return new Promise((res, rej) => {
+export const fetchProducts = (time = 1000) => {
+    return new Promise((res) => {
         setTimeout(() => {
-          if (shouldReject) {
-            rej('server error');
-          } else {
             res(data);
-          }           
-        }, 1000);
+        }, time);
     });
 };
-

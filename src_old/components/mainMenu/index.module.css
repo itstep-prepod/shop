@@ -8,6 +8,7 @@
 
 }
 .userName {
+    user-select: none;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -28,8 +29,8 @@
 }
 
 .route {
-    text-decoration: none;
     margin-right: 10px;
+    text-decoration: none;
     cursor: pointer;
     font-size: 14px;
     background: none;
